@@ -1,0 +1,7 @@
+package com.json.data.controller;
+
+
+@Controller
+public class JsonProducerController {
+
+}

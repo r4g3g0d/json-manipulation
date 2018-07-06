@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1530880332426_0" label="geo-tools" name="geo-tools">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/geo-tools" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/common-component" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/geo-coding-component" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/geo-tools-component" type="4"/>
+</workingSet>
+</workingSetManager>

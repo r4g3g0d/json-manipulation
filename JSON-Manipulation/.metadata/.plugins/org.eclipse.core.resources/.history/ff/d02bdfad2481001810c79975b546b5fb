@@ -1,0 +1,14 @@
+package com.json.data.repository;
+
+import java.util.Properties;
+
+public class JsonProducerRepository {
+	
+	
+	public String fileName; 
+
+	try{
+        String text = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
+
+        JSONObject obj = new JSONObject(text);
+}

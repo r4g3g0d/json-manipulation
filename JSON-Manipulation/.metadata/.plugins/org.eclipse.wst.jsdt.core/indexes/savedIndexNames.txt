@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+D:\4.Folder Of Workplaces\JSON-Manipulation\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3356837176.index

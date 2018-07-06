@@ -1,0 +1,561 @@
+2018-07-06 15:30:50,352 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-07-06 15:31:20,139 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.json.data:json-producer:0.0.1-SNAPSHOT @ D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\pom.xml.
+2018-07-06 15:31:21,335 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /json-producer/src/main/java
+2018-07-06 15:31:21,336 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /json-producer/src/main/resources
+2018-07-06 15:31:21,339 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /json-producer/src/main/resources
+2018-07-06 15:31:21,342 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /json-producer/src/test/java
+2018-07-06 15:31:21,977 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2018-07-06 15:31:23,988 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:31:23,993 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:31:24,098 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:31:24,101 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:31:24,101 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:31:24,957 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:31:24,959 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:31:24,959 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:31:24,961 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:31:24,961 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:32:13,228 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools:1.0.0-SNAPSHOT @ D:\GEO_REPO_updated06.12.2018\GEOTOOLS\pom.xml.
+2018-07-06 15:32:14,191 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:common-component:1.0.0-SNAPSHOT @ D:\GEO_REPO_updated06.12.2018\GEOTOOLS\common\pom.xml.
+2018-07-06 15:32:14,998 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-coding-component:1.0.0-SNAPSHOT @ D:\GEO_REPO_updated06.12.2018\GEOTOOLS\geocoding\pom.xml.
+2018-07-06 15:32:16,256 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools-component:1.0.0-SNAPSHOT @ D:\GEO_REPO_updated06.12.2018\GEOTOOLS\geoTools\pom.xml.
+2018-07-06 15:33:14,353 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/main/java
+2018-07-06 15:33:14,353 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common-component/src/main/resources
+2018-07-06 15:33:14,354 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/test/java
+2018-07-06 15:33:14,490 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/main/java
+2018-07-06 15:33:14,490 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/main/resources
+2018-07-06 15:33:14,490 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/test/java
+2018-07-06 15:33:14,490 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/test/resources
+2018-07-06 15:33:16,910 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/main/java
+2018-07-06 15:33:16,914 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-coding-component/src/main/resources
+2018-07-06 15:33:16,915 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/test/java
+2018-07-06 15:33:18,208 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 65 sec
+2018-07-06 15:33:19,672 [Worker-18] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/petrisor.man/AppData/Local/Temp/RemoteBundleDiscoveryStrategy6622416440083388431.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_1315375019648803253.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2018-07-06 15:33:19,672 [Worker-18] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2018-07-06 15:33:19,674 [Worker-18] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/petrisor.man/AppData/Local/Temp/RemoteBundleDiscoveryStrategy6622416440083388431.tmp/org.eclipse.m2e.discovery.oss_catalog_1.6.jar_1315375019648803253.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive.xml
+2018-07-06 15:33:19,674 [Worker-18] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2018-07-06 15:33:48,027 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools:1.0.0-SNAPSHOT @ D:\GEO_REPO\pom.xml.
+2018-07-06 15:33:48,343 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:common-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\common\pom.xml.
+2018-07-06 15:33:48,445 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-coding-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\geocoding\pom.xml.
+2018-07-06 15:33:48,620 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\geoTools\pom.xml.
+2018-07-06 15:33:51,326 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/main/java
+2018-07-06 15:33:51,326 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common-component/src/main/resources
+2018-07-06 15:33:51,326 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/test/java
+2018-07-06 15:33:51,491 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/main/java
+2018-07-06 15:33:51,491 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/main/resources
+2018-07-06 15:33:51,492 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/test/java
+2018-07-06 15:33:51,492 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/test/resources
+2018-07-06 15:33:53,203 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/main/java
+2018-07-06 15:33:53,203 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-coding-component/src/main/resources
+2018-07-06 15:33:53,203 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/test/java
+2018-07-06 15:33:53,726 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 8 sec
+2018-07-06 15:33:54,964 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:54,964 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:33:54,994 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:54,994 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GEO_REPO\common\src\test\resources
+2018-07-06 15:33:57,948 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:57,948 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-07-06 15:33:57,978 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:57,978 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GEO_REPO\geocoding\src\test\resources
+2018-07-06 15:33:59,564 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:59,565 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-07-06 15:33:59,584 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:33:59,584 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:34:22,624 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools:1.0.0-SNAPSHOT @ D:\GEO_REPO\pom.xml.
+2018-07-06 15:34:22,867 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:common-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\common\pom.xml.
+2018-07-06 15:34:22,948 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-coding-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\geocoding\pom.xml.
+2018-07-06 15:34:23,095 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.snapon.sbs:geo-tools-component:1.0.0-SNAPSHOT @ D:\GEO_REPO\geoTools\pom.xml.
+2018-07-06 15:34:25,703 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/main/java
+2018-07-06 15:34:25,703 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /common-component/src/main/resources
+2018-07-06 15:34:25,704 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /common-component/src/test/java
+2018-07-06 15:34:25,769 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/main/java
+2018-07-06 15:34:25,769 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/main/resources
+2018-07-06 15:34:25,769 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-tools-component/src/test/java
+2018-07-06 15:34:25,769 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-tools-component/src/test/resources
+2018-07-06 15:34:27,452 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/main/java
+2018-07-06 15:34:27,452 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /geo-coding-component/src/main/resources
+2018-07-06 15:34:27,452 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /geo-coding-component/src/test/java
+2018-07-06 15:34:28,390 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 4 project(s) in 6 sec
+2018-07-06 15:34:29,848 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:29,848 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:34:29,934 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:29,934 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GEO_REPO\common\src\test\resources
+2018-07-06 15:34:30,846 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:30,846 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2018-07-06 15:34:30,936 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:30,936 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\GEO_REPO\geocoding\src\test\resources
+2018-07-06 15:34:32,329 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:32,329 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-07-06 15:34:32,351 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:34:32,351 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:37:49,317 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:37:49,319 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:37:49,320 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:37:49,322 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:37:49,322 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:38:03,133 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:03,134 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:38:03,138 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:38:03,140 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:03,140 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:38:09,137 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:09,137 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:38:09,138 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:38:09,140 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:09,140 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:38:20,366 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:20,367 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:38:20,368 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:38:20,371 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:38:20,371 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:39:22,356 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:39:22,357 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:39:22,358 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:39:22,360 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:39:22,360 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:55:01,496 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.packt.example:remote-authserver:0.0.1-SNAPSHOT @ D:\1.Workspace-OAUTH2.0_cookbook\remote-authserver\pom.xml.
+2018-07-06 15:55:02,893 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /remote-authserver/src/main/java
+2018-07-06 15:55:02,893 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /remote-authserver/src/main/resources
+2018-07-06 15:55:02,893 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /remote-authserver/src/main/resources
+2018-07-06 15:55:02,893 [Worker-24] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /remote-authserver/src/test/java
+2018-07-06 15:55:02,991 [Worker-24] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2018-07-06 15:55:03,972 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:55:03,973 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:55:04,005 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:55:04,008 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:55:04,008 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\1.Workspace-OAUTH2.0_cookbook\remote-authserver\src\test\resources
+2018-07-06 15:55:30,868 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.packt.example:remote-resource:0.0.1-SNAPSHOT @ D:\1.Workspace-OAUTH2.0_cookbook\remote-resource\pom.xml.
+2018-07-06 15:55:31,260 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /remote-resource/src/main/java
+2018-07-06 15:55:31,260 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /remote-resource/src/main/resources
+2018-07-06 15:55:31,260 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /remote-resource/src/main/resources
+2018-07-06 15:55:31,260 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /remote-resource/src/test/java
+2018-07-06 15:55:31,342 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2018-07-06 15:55:32,259 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:55:32,259 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:55:32,264 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:55:32,266 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:55:32,266 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\1.Workspace-OAUTH2.0_cookbook\remote-resource\src\test\resources
+2018-07-06 15:56:29,194 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:56:29,195 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:56:29,196 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:56:29,199 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:56:29,199 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:56:45,663 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:56:45,664 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:56:45,665 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:56:45,666 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:56:45,666 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:57:56,029 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:57:56,029 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:57:56,030 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:57:56,032 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:57:56,032 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 15:58:26,817 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:58:26,818 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 15:58:26,819 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 15:58:26,821 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 15:58:26,821 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:25:11,718 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:25:11,718 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:25:11,719 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:25:11,721 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:25:11,721 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:38:18,841 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:38:18,845 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:38:18,847 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:38:18,849 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:38:18,849 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:38:23,428 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:38:23,429 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:38:23,435 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:38:23,438 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:38:23,438 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:41:31,014 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:41:31,015 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:41:31,019 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:41:31,023 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:41:31,023 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:41:34,627 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:41:34,627 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:41:34,629 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:41:34,632 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:41:34,633 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:56:24,276 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:56:24,276 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:56:24,276 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:56:24,276 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:56:24,276 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:58:37,258 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:58:37,258 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:58:37,258 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:58:37,258 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:58:37,258 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:59:14,881 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:59:14,882 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:59:14,883 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:59:14,884 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:59:14,884 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 16:59:52,223 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:59:52,224 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 16:59:52,226 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 16:59:52,227 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 16:59:52,227 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:01:09,291 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:09,291 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:01:09,291 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:01:09,291 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:09,291 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:01:40,776 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.json.data:json-producer:0.0.1-SNAPSHOT @ D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\pom.xml.
+2018-07-06 17:01:41,294 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:41,297 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:01:41,297 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:01:41,298 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:41,298 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:01:42,907 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:42,908 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:01:42,920 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:01:42,922 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:01:42,922 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:02:05,079 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:02:05,080 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:02:05,082 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:02:05,084 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:02:05,084 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:02:35,300 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:02:35,301 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:02:35,303 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:02:35,305 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:02:35,305 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:04,510 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:04,510 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:04,510 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:04,510 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:04,510 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:14,904 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:14,906 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:14,907 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:14,909 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:14,909 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:16,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:16,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:16,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:16,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:16,095 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:33,019 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:33,019 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:33,035 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:33,035 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:33,035 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:40,889 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:40,889 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:40,889 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:40,889 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:40,889 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:04:42,993 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:42,994 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:04:42,996 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:04:42,996 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:04:42,996 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:06:49,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:06:49,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:06:49,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:06:49,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:06:49,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:19,494 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:19,494 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:19,494 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:19,510 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:19,510 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:31,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:31,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:31,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:31,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:31,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:39,627 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:39,627 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:39,629 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:39,630 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:39,630 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:41,386 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:41,386 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:41,387 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:41,388 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:41,388 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:43,957 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:43,957 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:43,958 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:43,961 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:43,961 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:07:54,874 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:54,875 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:07:54,876 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:07:54,878 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:07:54,878 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:08:17,313 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:08:17,314 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:08:17,315 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:08:17,317 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:08:17,317 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:08:43,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:08:43,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:08:43,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:08:43,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:08:43,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:06,416 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:06,417 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:06,418 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:06,420 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:06,420 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:11,234 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:11,235 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:11,236 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:11,237 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:11,237 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:33,716 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:33,716 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:33,716 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:33,716 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:33,716 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:36,005 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:36,007 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:36,010 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:36,014 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:36,014 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:40,761 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:40,762 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:40,763 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:40,764 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:40,764 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:09:44,113 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:44,113 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:09:44,113 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:09:44,113 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:09:44,113 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:15,125 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:15,126 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:15,156 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:15,158 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:15,158 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:49,815 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:49,816 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:49,817 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:49,818 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:49,818 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:51,286 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:51,287 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:51,289 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:51,291 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:51,291 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:54,214 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:54,215 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:54,216 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:54,217 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:54,217 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:57,970 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:57,971 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:57,973 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:57,974 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:57,974 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:10:59,111 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:59,112 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:10:59,113 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:10:59,114 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:10:59,115 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:11:00,556 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:11:00,557 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:11:00,558 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:11:00,559 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:11:00,559 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:11:03,742 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:11:03,742 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:11:03,743 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:11:03,745 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:11:03,745 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:19:48,476 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:19:48,477 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:19:48,478 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:19:48,479 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:19:48,480 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:26:30,355 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:26:30,355 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:26:30,355 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:26:30,355 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:26:30,355 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:26:32,323 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:26:32,323 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:26:32,325 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:26:32,326 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:26:32,326 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:28:13,328 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:28:13,328 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:28:13,329 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:28:13,331 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:28:13,331 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:28:18,393 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:28:18,394 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:28:18,395 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:28:18,397 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:28:18,397 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:29:56,898 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:29:56,899 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:29:56,900 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:29:56,902 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:29:56,902 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:29:59,623 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:29:59,623 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:29:59,623 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:29:59,639 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:29:59,639 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:30:51,685 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:30:51,685 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:30:51,685 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:30:51,685 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:30:51,685 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:31:17,351 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:17,351 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:31:17,366 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:31:17,366 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:17,366 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:31:25,925 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:25,925 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:31:25,925 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:31:25,925 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:25,925 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:31:35,079 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:35,080 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:31:35,081 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:31:35,082 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:31:35,082 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:34:13,832 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:13,833 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:34:13,834 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:34:13,835 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:13,835 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:34:32,569 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:32,570 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:34:32,571 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:34:32,573 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:32,574 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:34:35,623 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:35,623 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:34:35,623 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:34:35,631 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:34:35,631 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:35:08,162 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @7497306ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-07-06 17:35:08,311 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-07-06 17:35:08,359 [Start Help Server] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-07-06 17:35:08,359 [Start Help Server] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-07-06 17:35:08,362 [Start Help Server] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-07-06 17:35:08,627 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5351663d{/help,null,AVAILABLE}
+2018-07-06 17:35:08,650 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@751c5cd7{HTTP/1.1,[http/1.1]}{127.0.0.1:53309}
+2018-07-06 17:35:08,650 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @7497794ms
+2018-07-06 17:38:34,659 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:38:34,659 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:38:34,659 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:38:34,659 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:38:34,659 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:38:48,702 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:38:48,702 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:38:48,702 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:38:48,702 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:38:48,702 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:41:22,767 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:41:22,767 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:41:22,767 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:41:22,767 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:41:22,767 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:43:00,426 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:00,427 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:43:00,429 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:43:00,432 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:00,432 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:43:27,265 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:27,265 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:43:27,268 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:43:27,272 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:27,272 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:43:28,898 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:28,898 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:43:28,900 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:43:28,902 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:43:28,903 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:44:36,133 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:44:36,133 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:44:36,136 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:44:36,139 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:44:36,140 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:45:52,982 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:45:52,982 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:45:52,985 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:45:52,989 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:45:52,989 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:49:38,852 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:49:38,853 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:49:38,854 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:49:38,856 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:49:38,856 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:53:34,986 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:53:34,986 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:53:34,986 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:53:34,986 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:53:34,986 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:54:08,691 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:54:08,691 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:54:08,691 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:54:08,691 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:54:08,691 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 17:54:55,652 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:54:55,652 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 17:54:55,653 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 17:54:55,654 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 17:54:55,654 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:00:44,492 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:00:44,492 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 18:00:44,492 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:00:44,507 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:00:44,507 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:00:54,516 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:00:54,516 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:00:54,516 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:00:54,516 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:00:54,516 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:02:32,151 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:02:32,151 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:02:32,151 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 18:02:32,151 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:02:32,151 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:02:36,488 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:02:36,488 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:02:36,488 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 18:02:36,488 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:02:36,488 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:03:40,011 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:03:40,011 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:03:40,012 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 18:03:40,014 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:03:40,014 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:13:32,571 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:32,572 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:32,572 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:32,572 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:32,572 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:13:47,927 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:47,927 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:47,942 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:47,942 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:47,942 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:13:58,191 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:58,191 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:58,191 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:13:58,191 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:13:58,191 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:14:16,258 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:14:16,259 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:14:16,261 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:14:16,263 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:14:16,263 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources
+2018-07-06 18:15:41,333 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:15:41,334 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-07-06 18:15:41,335 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-07-06 18:15:41,337 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-07-06 18:15:41,337 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\4.Folder Of Workplaces\JSON-Manipulation\json-producer\src\test\resources

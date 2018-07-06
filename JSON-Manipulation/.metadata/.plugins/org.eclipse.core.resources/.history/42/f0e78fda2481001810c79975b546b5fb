@@ -1,0 +1,16 @@
+package com.json.data.repository;
+
+import java.util.Properties;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class JsonProducerRepository {
+	
+	@Value("${filepath}")
+	public String fileName; 
+
+	try{
+        String text = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
+
+        JSONObject obj = new JSONObject(text);
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/common-component" element2="/geo-coding-component" element3="/geo-tools" element4="/geo-tools-component" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1530880411326"/>&#x0A;<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/common-component" element2="/geo-coding-component" element3="/geo-tools" element4="/geo-tools-component" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1530880451656"/>
+</session>

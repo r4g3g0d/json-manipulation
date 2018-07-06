@@ -1,0 +1,28 @@
+package com.json.data.repository;
+
+import java.io.FileReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Properties;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.springframework.beans.factory.annotation.Value;
+
+public class JsonProducerRepository {
+	
+	@Value("${filepath}")
+	public String fileName; 
+
+	  try {
+	        JSONParser parser = new JSONParser();
+	        //Use JSONObject for simple JSON and JSONArray for array of JSON.
+	        JSONObject data = (JSONObject) parser.parse(
+	              new FileReader(fileName));//path to the JSON file.
+
+	        String json = data.toJSONString();
+	    } catch (IOException | ParseException e) {
+	        e.printStackTrace();
+	    }
+}
