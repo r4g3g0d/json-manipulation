@@ -1,6 +1,7 @@
 package com.json.data.jsonproducer.controller;
 
-import org.json.simple.JSONObject;
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,13 +18,9 @@ public class JsonProducerController {
 	JsonProducerRepository jsonProducer;
 
 	@RequestMapping(value = "get-json", method = RequestMethod.GET)
-	public ResponseEntity<JSONObject> obtainJson() {
-		JSONObject jsonContent = jsonProducer.retrieveJson();
-		System.out.println("beb");
-		return new ResponseEntity<JSONObject>(jsonContent, HttpStatus.OK);
+	public ResponseEntity<String> obtainJson() throws IOException {
+		String jsonContent = jsonProducer.retrieveJson();
+		return new ResponseEntity<String>(jsonContent, HttpStatus.OK);
 	}
-	@RequestMapping(value = "whatever_path", method = RequestMethod.GET)
-	public ResponseEntity<String> getResult() {
-	    return new ResponseEntity<>("Hello World", HttpStatus.OK);
-	}
+	
 }
