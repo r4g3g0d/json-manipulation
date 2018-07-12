@@ -1,0 +1,6 @@
+fetch h http://localhost:8080/get-json
+ foreach c h.result.companies.company 
+   fetch v https://api.foursquare.com/v2/venues/search?ll={c.address[0].coordinate.north,c.address[0].coordinate.east}&client_id=CLIENT_ID&client_secret=CLIENT_SECRET&intent=match&name={c.displayName}&v=20180401 
+     fetch d https://api.foursquare.com/v2/venues/${v.response.venues[0].id}/photos?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&v=20180401 
+       foreach i d.response.photo.items 
+         download {i.prefix}original{i.suffix} /some_local_path/photos/{c.id}_{i.suffix}
