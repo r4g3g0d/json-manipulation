@@ -40,7 +40,6 @@ public class CommandInterpreter {
 
 			HashMap<String, String> result = exp.interpret(ie);
 
-			System.out.println(result);
 		}
 	}
 
