@@ -18,6 +18,7 @@ import java.util.stream.IntStream;
 
 import javax.script.ScriptException;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +32,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Component
 public class InterpreterEngine {
 
+	@Value("${client-id}")
+	public String clientId;
+
+	@Value("${client-secret}")
+	public String clientSecret;
+
 	private static HashMap<String, String> resultCounter = new HashMap<String, String>();
 
 	public HashMap<String, String> fetch(String input) throws IOException {
@@ -41,19 +48,20 @@ public class InterpreterEngine {
 		String endpoint = tokens.get(2);
 		if (containsVariables(endpoint)) {
 			List<String> endpointVariables = this.findVariables(endpoint);
-			List<String> endpoints = this.replaceEndpointVariables(endpoint, endpointVariables);
+			List<String> formattedEndpoints = this.replaceEndpointVariables(endpoint, endpointVariables);
 			System.out.println(endpointVariables);
+			for (String formattedEndpoint : formattedEndpoints) {
+
+				RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(formattedEndpoint));
+				ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
+				System.out.println(jsonContent);
+
+			}
+
 		} else {
 
-			ResponseEntity<String> jsonContent;
-			try {
-				System.out.println(endpoint);
-				RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(endpoint));
-				jsonContent = restTemplate.exchange(request, String.class);
-
-			} catch (HttpClientErrorException e) {
-				throw new RuntimeException("It was not possible to retrieve the JSON");
-			}
+			RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(endpoint));
+			ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
 
 			resultCounter.put(tokens.get(1), jsonContent.getBody());
 			return resultCounter;
@@ -64,7 +72,7 @@ public class InterpreterEngine {
 
 	private List<String> replaceEndpointVariables(String endpoint, List<String> endpointVariables) throws IOException {
 		Map<String, List<JsonNode>> finalResult = new HashMap<String, List<JsonNode>>();
-		// poate ca logica asta ar trebui afara
+
 		List<String> listOfEndpoints = new ArrayList<>();
 
 		for (String variable : endpointVariables) {
@@ -88,11 +96,9 @@ public class InterpreterEngine {
 						} else {
 							rootNode = rootNode.path(v);
 						}
-					}
-					else {
+					} else {
 						rootNode = next.path(v);
 					}
-					
 
 				}
 				eachVariableResult.add(rootNode);
@@ -112,7 +118,8 @@ public class InterpreterEngine {
 				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j),
 						finalResult.get(endpointVariables.get(j)).get(i).toString());
 			}
-			listOfEndpoints.add(partialEndpoint);
+			listOfEndpoints.add(partialEndpoint.replaceAll("\\b(\\w*CLIENT_ID\\w*)\\b", clientId)
+					.replaceAll("\\b(\\w*CLIENT_SECRET\\w*)\\b", clientSecret));
 		}
 		return listOfEndpoints;
 	}
@@ -160,9 +167,9 @@ public class InterpreterEngine {
 	}
 
 	private List<String> findVariables(String endpoint) {
-		// [^a-z][a-z]{1}\.[aA-zZ0-9 .]+} or [^a-z][a-z]{1}\.[aA-zZ0-9 .]+,
+
 		Pattern pattern = Pattern.compile("\\W\\w{1}\\.[aA-zZ0-9.]+");
-		// TODO: 1st this - check how to get , and }
+
 		Matcher matcher = pattern.matcher(endpoint);
 
 		List<String> resultList = new ArrayList<String>();
