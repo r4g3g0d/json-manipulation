@@ -23,7 +23,7 @@ public class JsonManipulationUtils {
 
 	@Value("${client-secret}")
 	public String clientSecret;
-	
+
 	@Autowired
 	StringRegexUtils regexUtils;
 
@@ -45,9 +45,9 @@ public class JsonManipulationUtils {
 				JsonNode next = iter.next();
 				for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
 					if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
-						// if split variable contains List indices
+						// if split variable contains List Indices (ex : address[0])
 						if (regexUtils.containsPattern(v, "\\[.*\\]")) {
-							
+
 							rootNode = next.path(v.replaceAll("\\[.*\\]", ""));
 							rootNode = rootNode.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
 						} else {
@@ -74,8 +74,9 @@ public class JsonManipulationUtils {
 				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j),
 						finalResult.get(endpointVariables.get(j)).get(i).toString());
 			}
+			
 			listOfEndpoints.add(partialEndpoint.replaceAll("\\b(\\w*CLIENT_ID\\w*)\\b", clientId)
-					.replaceAll("\\b(\\w*CLIENT_SECRET\\w*)\\b", clientSecret));
+					.replaceAll("\\b(\\w*CLIENT_SECRET\\w*)\\b", clientSecret).replaceAll("\\}|\\{|\\\"","").replaceAll(" ", "+"));
 		}
 		return listOfEndpoints;
 	}

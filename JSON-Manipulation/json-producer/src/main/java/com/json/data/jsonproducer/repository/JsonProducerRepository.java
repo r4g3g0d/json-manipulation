@@ -23,7 +23,8 @@ public class JsonProducerRepository {
 	public String retrieveJson() throws IOException {
 		
 		File file = ResourceUtils.getFile(fileName);
-		String jsonContent = FileUtils.readFileToString(file,"UTF-8");
+		//String jsonContent = FileUtils.readFileToString(file,"UTF-8");
+		String jsonContent = FileUtils.readFileToString(file,"ISO-8859-1");
 		
 	    return jsonContent;
 	}

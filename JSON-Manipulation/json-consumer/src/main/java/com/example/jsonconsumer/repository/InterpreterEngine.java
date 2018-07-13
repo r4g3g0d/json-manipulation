@@ -2,6 +2,7 @@ package com.example.jsonconsumer.repository;
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import java.util.HashMap;
@@ -52,10 +53,16 @@ public class InterpreterEngine {
 			List<String> formattedEndpoints = jsonUtils.replaceEndpointVariables(endpoint, endpointVariables);
 
 			for (String formattedEndpoint : formattedEndpoints) {
-
+				System.out.println(formattedEndpoint);
+				
+				char a_char = formattedEndpoint.charAt(237);
+				char b_char = formattedEndpoint.charAt(238);
+				System.out.println("--->" + a_char + "->>>" + b_char);
+				
 				RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(formattedEndpoint));
+				
 				ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
-
+				
 				// need to see what structure will return
 				System.out.println(jsonContent);
 
