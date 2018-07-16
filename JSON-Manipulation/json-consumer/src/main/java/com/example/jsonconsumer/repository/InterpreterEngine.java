@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
+import java.util.concurrent.CompletableFuture;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -54,18 +54,11 @@ public class InterpreterEngine {
 
 			for (String formattedEndpoint : formattedEndpoints) {
 				System.out.println(formattedEndpoint);
-				
-				char a_char = formattedEndpoint.charAt(237);
-				char b_char = formattedEndpoint.charAt(238);
-				System.out.println("--->" + a_char + "->>>" + b_char);
-				
+
 				RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(formattedEndpoint));
-				
+
 				ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
 				
-				// need to see what structure will return
-				System.out.println(jsonContent);
-
 			}
 
 		} else {
@@ -93,7 +86,13 @@ public class InterpreterEngine {
 		}
 
 		resultCounter.put(tokens.get(1), rootNode.toString());
+		System.out.println(rootNode.size());
 		return resultCounter;
 	}
+	
+	
+	/*public CompletableFuture<String> fetchPromise(String endpoints) {
+		
+	}*/
 
 }

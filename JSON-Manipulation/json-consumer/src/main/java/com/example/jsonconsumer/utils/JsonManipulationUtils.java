@@ -1,6 +1,7 @@
 package com.example.jsonconsumer.utils;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -71,12 +72,22 @@ public class JsonManipulationUtils {
 			String partialEndpoint = endpoint;
 			// String partialEndpoint;
 			for (int j = 0; j < endpointVariables.size(); j++) {
-				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j),
-						finalResult.get(endpointVariables.get(j)).get(i).toString());
+				String valueToReplaceWith = finalResult.get(endpointVariables.get(j)).get(i).toString();
+				if (valueToReplaceWith.contains(" ")) {
+					valueToReplaceWith = URLEncoder.encode(valueToReplaceWith, "UTF-8");
+				}
+
+				/*
+				 * partialEndpoint = partialEndpoint.replace(endpointVariables.get(j),
+				 * finalResult.get(endpointVariables.get(j)).get(i).toString());
+				 */
+				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j), valueToReplaceWith);
+
 			}
-			
+
 			listOfEndpoints.add(partialEndpoint.replaceAll("\\b(\\w*CLIENT_ID\\w*)\\b", clientId)
-					.replaceAll("\\b(\\w*CLIENT_SECRET\\w*)\\b", clientSecret).replaceAll("\\}|\\{|\\\"","").replaceAll(" ", "+"));
+					.replaceAll("\\b(\\w*CLIENT_SECRET\\w*)\\b", clientSecret).replaceAll("\\}|\\{|\\\"", "")
+					.replaceAll(" ", "+"));
 		}
 		return listOfEndpoints;
 	}
