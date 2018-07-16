@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,13 @@ public class JsonManipulationUtils {
 			List<JsonNode> eachVariableResult = new ArrayList();
 
 			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
-			String dataSetToParse = InterpreterEngine.resultCounter.get(splitVariables.get(0));
+			String dataSetToParse = null;
+			try {
+				dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
+			} catch (InterruptedException | ExecutionException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			ObjectMapper objectMapper = new ObjectMapper();
 			JsonNode rootNode = objectMapper.readTree(dataSetToParse);
 			Iterator<JsonNode> iter = rootNode.iterator();
