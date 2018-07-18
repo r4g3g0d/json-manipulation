@@ -32,7 +32,8 @@ public class JsonManipulationUtils {
 	@Autowired
 	StringRegexUtils regexUtils;
 
-	public HashMap<String,List<String>> obtainDownloadFullPath(String rawPath, List<String> rawPathVariables) throws IOException {
+	public HashMap<String, List<String>> obtainDownloadFullPath(String rawPath, List<String> rawPathVariables)
+			throws IOException {
 		HashMap<String, List<String>> finalResult = new HashMap<>();
 		for (String variable : rawPathVariables) {
 			List<String> eachVariableResult = new ArrayList<String>();
@@ -100,7 +101,7 @@ public class JsonManipulationUtils {
 				}
 				if (promiseResult != null) {
 					ObjectMapper objectMapper = new ObjectMapper();
-					System.out.println(promiseResult);
+					System.out.println("e empty aici oare ? " + promiseResult);
 					JsonNode rootNode = objectMapper.readTree(promiseResult);
 					if (rootNode.size() > 0) {
 						Iterator<JsonNode> iter = rootNode.iterator();
@@ -129,7 +130,7 @@ public class JsonManipulationUtils {
 
 			}
 			System.out.println(eachVariableResult);
-			finalResult.put(variable, eachVariableResult);// for
+			finalResult.put(variable, eachVariableResult);
 		}
 
 		return finalResult;
@@ -188,7 +189,10 @@ public class JsonManipulationUtils {
 						}
 
 					}
-					eachVariableResult.add(rootNode);
+					if (rootNode.toString() != "") {
+						eachVariableResult.add(rootNode);
+					}
+					
 
 				}
 
@@ -203,9 +207,9 @@ public class JsonManipulationUtils {
 			// String partialEndpoint;
 			for (int j = 0; j < endpointVariables.size(); j++) {
 				String valueToReplaceWith = finalResult.get(endpointVariables.get(j)).get(i).toString();
-				if (valueToReplaceWith.contains(" ")) {
-					valueToReplaceWith = URLEncoder.encode(valueToReplaceWith, "UTF-8");
-				}
+				// if (valueToReplaceWith.contains(" ")) {
+				valueToReplaceWith = URLEncoder.encode(valueToReplaceWith.replace("\"", ""), "UTF-8");
+				// }
 				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j), valueToReplaceWith);
 
 			}
@@ -216,8 +220,6 @@ public class JsonManipulationUtils {
 		}
 		return listOfEndpoints;
 	}
-
-	// public List<String> replaceVariablesFromList(){}
 
 	public List<JsonNode> replaceVariablesFromDict(String variable, String endpoint) throws IOException {
 		List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
@@ -252,7 +254,9 @@ public class JsonManipulationUtils {
 				}
 
 			}
-			eachVariableResult.add(rootNode);
+			if (regexUtils.checkValidity(rootNode.toString())) {
+				eachVariableResult.add(rootNode);
+			}
 
 		}
 		return eachVariableResult;

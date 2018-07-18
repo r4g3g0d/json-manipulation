@@ -45,18 +45,13 @@ public class InterpreterEngine {
 	StringRegexUtils regexUtils;
 	@Autowired
 	JsonManipulationUtils jsonUtils;
-	
-	
-	public void checkResponse() {
-		
-	}
-	
+
 	public static HashMap<String, String> resultCounter = new HashMap<String, String>();
 
 	public static HashMap<String, List<CompletableFuture<String>>> resCounter = new HashMap<String, List<CompletableFuture<String>>>();
 
 	public HashMap<String, String> download(String input) throws IOException {
-		System.out.println("[-download]");
+
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 		String endpoint = tokens.get(1);
 		List<String> endpointVariables = regexUtils.findVariables(endpoint);
@@ -95,11 +90,11 @@ public class InterpreterEngine {
 		 * 
 		 * System.out.println(formattedPaths);
 		 */
-		int counter = 0 ;
+		int counter = 0;
 		for (String downloadLink : listOfDownloadEndpoints) {
 			counter++;
 			try (InputStream in = new URL(downloadLink).openStream()) {
-				Files.copy(in, Paths.get("D:/" + Integer.toString(counter)+ ".jpg"));
+				Files.copy(in, Paths.get("D:/" + Integer.toString(counter) + ".jpg"));
 			}
 		}
 		return null;
@@ -110,26 +105,27 @@ public class InterpreterEngine {
 
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 
-		RestTemplate restTemplate = new RestTemplate();
 		String endpoint = tokens.get(2);
 
 		List<CompletableFuture<String>> responsePromises = new ArrayList<>();
-		//if endpoint contains variables
+		// if endpoint contains variables
 		if (regexUtils.containsPattern(endpoint, "\\W\\w{1}\\.{1}\\w")) {
 			List<String> endpointVariables = regexUtils.findVariables(endpoint);
 
 			List<String> formattedEndpoints = jsonUtils.replaceEndpointVariables(endpoint, endpointVariables);
-
+			System.out.println(formattedEndpoints);
 			for (String formattedEndpoint : formattedEndpoints) {
 				System.out.println(formattedEndpoint);
-
+				String s =  this.simpleGetRequest(formattedEndpoint);
+				
 				responsePromises.add(this.fetchPromise(formattedEndpoint));
 
 			}
 			resCounter.put(tokens.get(1), responsePromises);
 
 		} else {
-
+			String s = this.simpleGetRequest(endpoint);
+			System.out.println(s);
 			responsePromises.add(this.fetchPromise(endpoint));
 			resCounter.put(tokens.get(1), responsePromises);
 			try {
@@ -179,11 +175,12 @@ public class InterpreterEngine {
 	}
 
 	public String simpleGetRequest(String endpoint) {
-
+		System.out.println("--[][] Bad REQ ?" +  endpoint);
 		RestTemplate restTemplate = new RestTemplate();
 		RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(endpoint));
 		ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
-		System.out.println(jsonContent.toString());
+		System.out.println(endpoint);
+		//System.out.println(jsonContent.toString());
 		return jsonContent.getBody();
 	}
 
@@ -209,7 +206,7 @@ public class InterpreterEngine {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		for (String path : nodesToParse) {
 
 			rootNode = rootNode.path(path);

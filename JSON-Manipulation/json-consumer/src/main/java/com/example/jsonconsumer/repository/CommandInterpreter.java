@@ -23,6 +23,8 @@ public class CommandInterpreter {
 
 	@Autowired
 	InterpreterEngine ie;
+	
+	@Autowired
 
 	public void interpretCommands() throws IOException {
 
@@ -32,7 +34,7 @@ public class CommandInterpreter {
 		List<String> commandsList = this.retrieveCommands(fileName);
 
 		for (String commandRow : commandsList) {
-			if (commandRow.trim().startsWith("fetch")) {
+			if (commandRow.trim().startsWith("fetch")) {	
 				exp = new FetchExpression(commandRow.trim());
 			} else if (commandRow.trim().startsWith("foreach")) {
 				exp = new ForEachExpression(commandRow.trim());

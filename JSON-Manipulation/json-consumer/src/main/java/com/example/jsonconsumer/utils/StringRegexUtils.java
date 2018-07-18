@@ -1,6 +1,8 @@
 package com.example.jsonconsumer.utils;
 
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -46,5 +48,18 @@ public class StringRegexUtils {
 		}
 		return resultList;
 
+	}
+	
+	public boolean checkValidity(String response) {
+		Pattern pattern = Pattern.compile("\\[\\]");
+
+		Matcher matcher = pattern.matcher(response);
+		
+		return !matcher.matches();
+	}
+	public static final boolean isUTF8(final byte[] inputBytes) {
+	    final String converted = new String(inputBytes, StandardCharsets.UTF_8);
+	    final byte[] outputBytes = converted.getBytes(StandardCharsets.UTF_8);
+	    return Arrays.equals(inputBytes, outputBytes);
 	}
 }
