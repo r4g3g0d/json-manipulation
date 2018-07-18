@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
-
 @Service
 @Configuration
 public class CommandInterpreter {
@@ -23,17 +22,14 @@ public class CommandInterpreter {
 
 	@Autowired
 	InterpreterEngine ie;
-	
-	@Autowired
 
 	public void interpretCommands() throws IOException {
-
 
 		Expression exp = null;
 		List<String> commandsList = this.retrieveCommands(fileName);
 
 		for (String commandRow : commandsList) {
-			if (commandRow.trim().startsWith("fetch")) {	
+			if (commandRow.trim().startsWith("fetch")) {
 				exp = new FetchExpression(commandRow.trim());
 			} else if (commandRow.trim().startsWith("foreach")) {
 				exp = new ForEachExpression(commandRow.trim());
@@ -42,7 +38,7 @@ public class CommandInterpreter {
 			}
 
 			HashMap<String, List<CompletableFuture<String>>> result = exp.interpret(ie);
-
+			System.out.println(result);
 		}
 	}
 

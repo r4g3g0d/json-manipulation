@@ -37,10 +37,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class InterpreterEngine {
 
 	@Value("${client-id}")
-	public String clientId;
-
+	private String clientId;
 	@Value("${client-secret}")
-	public String clientSecret;
+	private String clientSecret;
+
 	@Autowired
 	StringRegexUtils regexUtils;
 	@Autowired
@@ -83,7 +83,7 @@ public class InterpreterEngine {
 			}
 		}
 		return null;
-		
+
 	}
 
 	public HashMap<String, List<CompletableFuture<String>>> fetch(String input) throws IOException {
@@ -100,9 +100,9 @@ public class InterpreterEngine {
 			List<String> formattedEndpoints = jsonUtils.replaceEndpointVariables(endpoint, endpointVariables);
 			System.out.println(formattedEndpoints);
 			for (String formattedEndpoint : formattedEndpoints) {
-				System.out.println(formattedEndpoint);
-				String s = this.simpleGetRequest(formattedEndpoint);
-
+				//For debugging purpose
+				/*System.out.println(formattedEndpoint);
+				String s = this.simpleGetRequest(formattedEndpoint);*/
 				responsePromises.add(this.fetchPromise(formattedEndpoint));
 
 			}
@@ -138,6 +138,13 @@ public class InterpreterEngine {
 		}
 
 		resultsMap.put(tokens.get(1), partialResult);
+		try {
+			String s = resultsMap.get("c").get(0).get();
+			System.out.println("TTT" + s);
+		} catch (InterruptedException | ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return resultsMap;
 	}
 
@@ -161,7 +168,6 @@ public class InterpreterEngine {
 		try {
 			dataToBeParsed = resultsMap.get(jsonNodes.get(0)).get(index).get();
 		} catch (InterruptedException | ExecutionException e) {
-
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
