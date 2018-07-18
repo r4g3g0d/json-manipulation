@@ -2,6 +2,8 @@ package com.example.jsonconsumer.repository;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class DownloadExpression implements Expression{
 	private String expression;
@@ -12,7 +14,7 @@ public class DownloadExpression implements Expression{
 	}
 
 	@Override
-	public HashMap<String,String> interpret(InterpreterEngine ie) throws IOException {
+	public HashMap<String, List<CompletableFuture<String>>> interpret(InterpreterEngine ie) throws IOException {
 		return ie.download(expression);
 	}
 }

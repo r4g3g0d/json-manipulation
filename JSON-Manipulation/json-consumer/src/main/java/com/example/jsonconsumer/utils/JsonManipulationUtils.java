@@ -38,12 +38,12 @@ public class JsonManipulationUtils {
 		for (String variable : rawPathVariables) {
 			List<String> eachVariableResult = new ArrayList<String>();
 			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
-			int sizeOfDataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+			int sizeOfDataSetToParse = InterpreterEngine.resultsMap.get(splitVariables.get(0)).size();
 
 			for (int i = 0; i < sizeOfDataSetToParse; i++) {
 				String promiseResult = null;
 				try {
-					promiseResult = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+					promiseResult = InterpreterEngine.resultsMap.get(splitVariables.get(0)).get(i).get();
 				} catch (InterruptedException | ExecutionException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -90,11 +90,11 @@ public class JsonManipulationUtils {
 		for (String variable : endpointVariables) {
 			List<String> eachVariableResult = new ArrayList<String>();
 			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
-			int sizeOfDataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+			int sizeOfDataSetToParse = InterpreterEngine.resultsMap.get(splitVariables.get(0)).size();
 			for (int i = 0; i < sizeOfDataSetToParse; i++) {
 				String promiseResult = null;
 				try {
-					promiseResult = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+					promiseResult = InterpreterEngine.resultsMap.get(splitVariables.get(0)).get(i).get();
 				} catch (InterruptedException | ExecutionException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -150,7 +150,7 @@ public class JsonManipulationUtils {
 
 			String firstOfDataSet = null;
 			try {
-				firstOfDataSet = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
+				firstOfDataSet = InterpreterEngine.resultsMap.get(splitVariables.get(0)).get(0).get();
 
 			} catch (InterruptedException | ExecutionException e1) {
 				// TODO Auto-generated catch block
@@ -162,7 +162,7 @@ public class JsonManipulationUtils {
 			} else {
 
 				try {
-					dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
+					dataSetToParse = InterpreterEngine.resultsMap.get(splitVariables.get(0)).get(0).get();
 				} catch (InterruptedException | ExecutionException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -223,13 +223,13 @@ public class JsonManipulationUtils {
 
 	public List<JsonNode> replaceVariablesFromDict(String variable, String endpoint) throws IOException {
 		List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
-		int sizeOfPromises = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+		int sizeOfPromises = InterpreterEngine.resultsMap.get(splitVariables.get(0)).size();
 		String dataSetToParse = null;
 
 		List<JsonNode> eachVariableResult = new ArrayList<JsonNode>();
 		for (int i = 0; i < sizeOfPromises; i++) {
 			try {
-				dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+				dataSetToParse = InterpreterEngine.resultsMap.get(splitVariables.get(0)).get(i).get();
 				System.out.println(dataSetToParse);
 			} catch (InterruptedException | ExecutionException e) { // TODO Auto-generated catch block
 				e.printStackTrace();

@@ -3,6 +3,7 @@ package com.example.jsonconsumer.repository;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 import javax.script.ScriptException;
 
@@ -18,7 +19,7 @@ public class FetchExpression implements Expression {
 	}
 
 	@Override
-	public HashMap<String,String> interpret(InterpreterEngine ie) throws IOException {
+	public HashMap<String, List<CompletableFuture<String>>> interpret(InterpreterEngine ie) throws IOException {
 		return ie.fetch(expression);
 	}
 

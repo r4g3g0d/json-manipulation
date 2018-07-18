@@ -46,11 +46,9 @@ public class InterpreterEngine {
 	@Autowired
 	JsonManipulationUtils jsonUtils;
 
-	public static HashMap<String, String> resultCounter = new HashMap<String, String>();
+	public static HashMap<String, List<CompletableFuture<String>>> resultsMap = new HashMap<String, List<CompletableFuture<String>>>();
 
-	public static HashMap<String, List<CompletableFuture<String>>> resCounter = new HashMap<String, List<CompletableFuture<String>>>();
-
-	public HashMap<String, String> download(String input) throws IOException {
+	public HashMap<String, List<CompletableFuture<String>>> download(String input) throws IOException {
 
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 		String endpoint = tokens.get(1);
@@ -77,19 +75,6 @@ public class InterpreterEngine {
 			listOfDownloadEndpoints.add(partialResult);
 		}
 
-		/*
-		 * Set<String> pathsKeys = fullPaths.keySet();
-		 * 
-		 * String anyPathKey = pathsKeys.iterator().next();
-		 * 
-		 * for (int j = 0; j < fullPaths.get(anyPathKey).size(); j++) { String
-		 * partialResult = rawPath; for (String key : pathsKeys) { partialResult =
-		 * partialResult.replace(key,
-		 * fullPaths.get(key).get(j)).replaceAll("\\}|\\{|\\\"", ""); }
-		 * formattedPaths.add(partialResult); }
-		 * 
-		 * System.out.println(formattedPaths);
-		 */
 		int counter = 0;
 		for (String downloadLink : listOfDownloadEndpoints) {
 			counter++;
@@ -98,10 +83,10 @@ public class InterpreterEngine {
 			}
 		}
 		return null;
-
+		
 	}
 
-	public HashMap<String, String> fetch(String input) throws IOException {
+	public HashMap<String, List<CompletableFuture<String>>> fetch(String input) throws IOException {
 
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 
@@ -116,37 +101,30 @@ public class InterpreterEngine {
 			System.out.println(formattedEndpoints);
 			for (String formattedEndpoint : formattedEndpoints) {
 				System.out.println(formattedEndpoint);
-				String s =  this.simpleGetRequest(formattedEndpoint);
-				
+				String s = this.simpleGetRequest(formattedEndpoint);
+
 				responsePromises.add(this.fetchPromise(formattedEndpoint));
 
 			}
-			resCounter.put(tokens.get(1), responsePromises);
+			resultsMap.put(tokens.get(1), responsePromises);
 
 		} else {
-			String s = this.simpleGetRequest(endpoint);
-			System.out.println(s);
+
 			responsePromises.add(this.fetchPromise(endpoint));
-			resCounter.put(tokens.get(1), responsePromises);
-			try {
-				System.out.println(resCounter.get(tokens.get(1)).get(0).get());
-			} catch (InterruptedException | ExecutionException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			resultsMap.put(tokens.get(1), responsePromises);
 
 		}
+		return resultsMap;
 
-		return null;
 	}
 
-	public HashMap<String, String> foreach(String input) throws IOException {
+	public HashMap<String, List<CompletableFuture<String>>> foreach(String input) throws IOException {
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 		List<String> jsonNodes = regexUtils.splitByDelimiter(tokens.get(2), ".");
 		List<String> nodesToParse = jsonNodes.stream().skip(1).collect(Collectors.toList());
 		List<CompletableFuture<String>> partialResult = new ArrayList<CompletableFuture<String>>();
 
-		int sizeOfPromises = resCounter.get(jsonNodes.get(0)).size();
+		int sizeOfPromises = resultsMap.get(jsonNodes.get(0)).size();
 		for (int i = 0; i < sizeOfPromises; i++) {
 			CompletableFuture<String> forEachPromise = this.forEachPromise(input, i);
 			try {
@@ -159,15 +137,8 @@ public class InterpreterEngine {
 			partialResult.add(forEachPromise);
 		}
 
-		resCounter.put(tokens.get(1), partialResult);
-		try {
-			System.out.println(resCounter.get(tokens.get(1)).get(0).get());
-		} catch (InterruptedException | ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return null;
+		resultsMap.put(tokens.get(1), partialResult);
+		return resultsMap;
 	}
 
 	public CompletableFuture<String> fetchPromise(String endpoint) {
@@ -175,24 +146,20 @@ public class InterpreterEngine {
 	}
 
 	public String simpleGetRequest(String endpoint) {
-		System.out.println("--[][] Bad REQ ?" +  endpoint);
 		RestTemplate restTemplate = new RestTemplate();
 		RequestEntity<Object> request = new RequestEntity<>(HttpMethod.GET, URI.create(endpoint));
 		ResponseEntity<String> jsonContent = restTemplate.exchange(request, String.class);
-		System.out.println(endpoint);
-		//System.out.println(jsonContent.toString());
 		return jsonContent.getBody();
 	}
 
 	public String forEachLogic(String input, int index) {
-		System.out.println("intri?");
 		List<String> tokens = regexUtils.splitByDelimiter(input, " ");
 		List<String> jsonNodes = regexUtils.splitByDelimiter(tokens.get(2), ".");
 		List<String> nodesToParse = jsonNodes.stream().skip(1).collect(Collectors.toList());
 		List<String> partialResult = new ArrayList<String>();
 		String dataToBeParsed = null;
 		try {
-			dataToBeParsed = resCounter.get(jsonNodes.get(0)).get(index).get();
+			dataToBeParsed = resultsMap.get(jsonNodes.get(0)).get(index).get();
 		} catch (InterruptedException | ExecutionException e) {
 
 			// TODO Auto-generated catch block

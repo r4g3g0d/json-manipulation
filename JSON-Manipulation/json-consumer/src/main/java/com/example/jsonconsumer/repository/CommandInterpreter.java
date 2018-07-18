@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
-import com.example.jsonconsumer.mapper.ResultCounter;
 
 @Service
 @Configuration
@@ -28,7 +28,6 @@ public class CommandInterpreter {
 
 	public void interpretCommands() throws IOException {
 
-		ResultCounter resultCounter = new ResultCounter();
 
 		Expression exp = null;
 		List<String> commandsList = this.retrieveCommands(fileName);
@@ -42,7 +41,7 @@ public class CommandInterpreter {
 				exp = new DownloadExpression(commandRow.trim());
 			}
 
-			HashMap<String, String> result = exp.interpret(ie);
+			HashMap<String, List<CompletableFuture<String>>> result = exp.interpret(ie);
 
 		}
 	}
