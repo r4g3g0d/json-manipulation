@@ -36,6 +36,8 @@ public class CommandInterpreter {
 				exp = new FetchExpression(commandRow.trim());
 			} else if (commandRow.trim().startsWith("foreach")) {
 				exp = new ForEachExpression(commandRow.trim());
+			} else if (commandRow.trim().startsWith("download")) {
+				exp = new DownloadExpression(commandRow.trim());
 			}
 
 			HashMap<String, String> result = exp.interpret(ie);

@@ -26,8 +26,115 @@ public class JsonManipulationUtils {
 	@Value("${client-secret}")
 	public String clientSecret;
 
+	@Value("${some_local_path}")
+	public String photoPath;
+
 	@Autowired
 	StringRegexUtils regexUtils;
+
+	public HashMap<String,List<String>> obtainDownloadFullPath(String rawPath, List<String> rawPathVariables) throws IOException {
+		HashMap<String, List<String>> finalResult = new HashMap<>();
+		for (String variable : rawPathVariables) {
+			List<String> eachVariableResult = new ArrayList<String>();
+			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
+			int sizeOfDataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+
+			for (int i = 0; i < sizeOfDataSetToParse; i++) {
+				String promiseResult = null;
+				try {
+					promiseResult = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+				} catch (InterruptedException | ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if (promiseResult != null) {
+					ObjectMapper objectMapper = new ObjectMapper();
+					System.out.println(promiseResult);
+					JsonNode rootNode = objectMapper.readTree(promiseResult);
+					if (rootNode.size() > 0) {
+						Iterator<JsonNode> iter = rootNode.iterator();
+						while (iter.hasNext()) {
+							JsonNode next = iter.next();
+							for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
+								if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
+									// if split variable contains List Indices (ex : address[0])
+									if (regexUtils.containsPattern(v, "\\[.*\\]")) {
+
+										rootNode = next.path(v.replaceAll("\\[.*\\]", ""));
+										rootNode = rootNode
+												.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
+									} else {
+										rootNode = rootNode.path(v);
+									}
+								} else {
+									rootNode = next.path(v);
+								}
+								eachVariableResult.add(rootNode.toString());
+							}
+						}
+
+					}
+				}
+			}
+			finalResult.put(variable, eachVariableResult);
+
+		}
+		return finalResult;
+	}
+
+	public HashMap<String, List<String>> obtainDownloadEndpoint(String endpoint, List<String> endpointVariables)
+			throws IOException {
+		HashMap<String, List<String>> finalResult = new HashMap<>();
+		// List<String> eachVariableResult = new ArrayList<String>();
+		for (String variable : endpointVariables) {
+			List<String> eachVariableResult = new ArrayList<String>();
+			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
+			int sizeOfDataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+			for (int i = 0; i < sizeOfDataSetToParse; i++) {
+				String promiseResult = null;
+				try {
+					promiseResult = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+				} catch (InterruptedException | ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if (promiseResult != null) {
+					ObjectMapper objectMapper = new ObjectMapper();
+					System.out.println(promiseResult);
+					JsonNode rootNode = objectMapper.readTree(promiseResult);
+					if (rootNode.size() > 0) {
+						Iterator<JsonNode> iter = rootNode.iterator();
+						while (iter.hasNext()) {
+							JsonNode next = iter.next();
+							for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
+								if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
+									// if split variable contains List Indices (ex : address[0])
+									if (regexUtils.containsPattern(v, "\\[.*\\]")) {
+
+										rootNode = next.path(v.replaceAll("\\[.*\\]", ""));
+										rootNode = rootNode
+												.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
+									} else {
+										rootNode = rootNode.path(v);
+									}
+								} else {
+									rootNode = next.path(v);
+								}
+								eachVariableResult.add(rootNode.toString());
+							}
+						}
+
+					}
+				}
+
+			}
+			System.out.println(eachVariableResult);
+			finalResult.put(variable, eachVariableResult);// for
+		}
+
+		return finalResult;
+
+	}
 
 	public List<String> replaceEndpointVariables(String endpoint, List<String> endpointVariables) throws IOException {
 		Map<String, List<JsonNode>> finalResult = new HashMap<String, List<JsonNode>>();
@@ -39,39 +146,55 @@ public class JsonManipulationUtils {
 
 			List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
 			String dataSetToParse = null;
+
+			String firstOfDataSet = null;
 			try {
-				dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
-			} catch (InterruptedException | ExecutionException e) {
+				firstOfDataSet = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
+
+			} catch (InterruptedException | ExecutionException e1) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e1.printStackTrace();
 			}
-			ObjectMapper objectMapper = new ObjectMapper();
-			JsonNode rootNode = objectMapper.readTree(dataSetToParse);
-			Iterator<JsonNode> iter = rootNode.iterator();
+			if (firstOfDataSet.matches("\\{\".*")) {
+				eachVariableResult = this.replaceVariablesFromDict(variable, endpoint);
+				finalResult.put(variable, eachVariableResult);
+			} else {
 
-			while (iter.hasNext()) {
-				JsonNode next = iter.next();
-				for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
-					if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
-						// if split variable contains List Indices (ex : address[0])
-						if (regexUtils.containsPattern(v, "\\[.*\\]")) {
+				try {
+					dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(0).get();
+				} catch (InterruptedException | ExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ObjectMapper objectMapper = new ObjectMapper();
+				JsonNode rootNode = objectMapper.readTree(dataSetToParse);
+				Iterator<JsonNode> iter = rootNode.iterator();
 
-							rootNode = next.path(v.replaceAll("\\[.*\\]", ""));
-							rootNode = rootNode.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
+				while (iter.hasNext()) {
+					JsonNode next = iter.next();
+					for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
+						if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
+							// if split variable contains List Indices (ex : address[0])
+							if (regexUtils.containsPattern(v, "\\[.*\\]")) {
+
+								rootNode = next.path(v.replaceAll("\\[.*\\]", ""));
+								rootNode = rootNode
+										.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
+							} else {
+								rootNode = rootNode.path(v);
+							}
 						} else {
-							rootNode = rootNode.path(v);
+							rootNode = next.path(v);
 						}
-					} else {
-						rootNode = next.path(v);
+
 					}
+					eachVariableResult.add(rootNode);
 
 				}
-				eachVariableResult.add(rootNode);
+
+				finalResult.put(variable, eachVariableResult);
 
 			}
-
-			finalResult.put(variable, eachVariableResult);
-
 		}
 		// obtain length of data
 		int size = finalResult.get(endpointVariables.get(0)).size();
@@ -83,11 +206,6 @@ public class JsonManipulationUtils {
 				if (valueToReplaceWith.contains(" ")) {
 					valueToReplaceWith = URLEncoder.encode(valueToReplaceWith, "UTF-8");
 				}
-
-				/*
-				 * partialEndpoint = partialEndpoint.replace(endpointVariables.get(j),
-				 * finalResult.get(endpointVariables.get(j)).get(i).toString());
-				 */
 				partialEndpoint = partialEndpoint.replace(endpointVariables.get(j), valueToReplaceWith);
 
 			}
@@ -98,4 +216,46 @@ public class JsonManipulationUtils {
 		}
 		return listOfEndpoints;
 	}
+
+	// public List<String> replaceVariablesFromList(){}
+
+	public List<JsonNode> replaceVariablesFromDict(String variable, String endpoint) throws IOException {
+		List<String> splitVariables = regexUtils.splitByDelimiter(variable, ".");
+		int sizeOfPromises = InterpreterEngine.resCounter.get(splitVariables.get(0)).size();
+		String dataSetToParse = null;
+
+		List<JsonNode> eachVariableResult = new ArrayList<JsonNode>();
+		for (int i = 0; i < sizeOfPromises; i++) {
+			try {
+				dataSetToParse = InterpreterEngine.resCounter.get(splitVariables.get(0)).get(i).get();
+				System.out.println(dataSetToParse);
+			} catch (InterruptedException | ExecutionException e) { // TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			ObjectMapper objectMapper = new ObjectMapper();
+			JsonNode rootNode = objectMapper.readTree(dataSetToParse);
+			for (String v : splitVariables.stream().skip(1).collect(Collectors.toList())) {
+				if (regexUtils.containsPattern(variable, "\\[.*\\]")) {
+					if (regexUtils.containsPattern(v, "\\[.*\\]")) {
+
+						rootNode = rootNode.path(v.replaceAll("\\[.*\\]", ""));
+						if (rootNode.size() > 0) {
+							rootNode = rootNode.get(Integer.parseInt(v.substring(v.indexOf("[") + 1, v.indexOf("]"))));
+						} else {
+							break;
+						}
+					} else {
+
+						rootNode = rootNode.path(v);
+					}
+
+				}
+
+			}
+			eachVariableResult.add(rootNode);
+
+		}
+		return eachVariableResult;
+	}
+
 }
